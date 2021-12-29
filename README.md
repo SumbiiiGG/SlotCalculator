@@ -1,0 +1,2 @@
+# sc
+ Slot Calculator!
