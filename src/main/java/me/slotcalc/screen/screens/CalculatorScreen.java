@@ -44,10 +44,10 @@ public class CalculatorScreen extends Screen {
         });
         int i=1;
         for(Dropper dropper : SlotCalc.droppers){
-            itemDistrubuiton+="D"+i+" "+dropper.getStackable() +"/"+dropper.getUnstackable()+",";
+            itemDistrubuiton+="D"+i+" "+dropper.getUnstackable() +"/"+dropper.getStackable()+",";
             i++;
         }
-        droppers.setText("Format! DropperNumber Stackbar/Unstackbar Deine Dropper = "+itemDistrubuiton);
+        droppers.setText("Format! DropperNumber Unstackbar/Stackbar Deine Dropper = "+itemDistrubuiton);
         droppers.setBounds(5,5,dimension.width,40);
         calculate.setBounds(5,40,200,40);
         newSlot.setBounds(5,90,200,40);
