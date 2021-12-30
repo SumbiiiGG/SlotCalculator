@@ -23,7 +23,7 @@ public class ChooseStackableScreen extends Screen {
             public void actionPerformed(ActionEvent e) {
                 if(currentDropper==ChooseDroppersScreen.totalDroppers){
                     System.out.println("Finished!");
-                    Dropper dropper = new Dropper(Integer.parseInt(stackableAnswer.getText()),Integer.parseInt(unstackableAnswer.getText()));
+                    Dropper dropper = new Dropper(Integer.parseInt(unstackableAnswer.getText()),Integer.parseInt(stackableAnswer.getText()));
                     SlotCalc.droppers.add(dropper);
                     for(Dropper d : SlotCalc.droppers){
                         System.out.println("s:"+d.getStackable() + " us:"+d.getUnstackable());
@@ -31,7 +31,7 @@ public class ChooseStackableScreen extends Screen {
                     refresh();
                     SlotCalc.currentScreen = new CalculatorScreen();
                 }else{
-                    Dropper dropper = new Dropper(Integer.parseInt(stackableAnswer.getText()),Integer.parseInt(unstackableAnswer.getText()));
+                    Dropper dropper = new Dropper(Integer.parseInt(unstackableAnswer.getText()),Integer.parseInt(stackableAnswer.getText()));
                     SlotCalc.droppers.add(dropper);
                     refresh();
                     currentDropper++;
